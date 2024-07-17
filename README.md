@@ -3,19 +3,24 @@
 ## I. Definition:
 
 Today, users typically think of apps as either platform-installed apps or browser-based "web" apps, where the browser itself is an app installed on a specific platform:
-Platform-specific apps function only on their respective device platforms, requiring a separate codebase for each platform and possibly a specialized development team familiar with the necessary tools and languages. This approach allows access to all platform-specific capabilities.
-On the other hand, web apps operate universally with a single codebase, running across various browsers and devices that support those browsers. However, this universal compatibility limits their ability to utilize platform-specific features that may not be available everywhere.
+
+- Platform-specific apps function only on their respective device platforms, requiring a separate codebase for each platform and possibly a specialized development team familiar with the necessary tools and languages. This approach allows access to all platform-specific capabilities.
+- On the other hand, web apps operate universally with a single codebase, running across various browsers and devices that support those browsers. However, this universal compatibility limits their ability to utilize platform-specific features that may not be available everywhere.
+
 A Progressive Web App (PWA) is a traditional web app that is progressively enhanced using open web technologies, to make sure it delivers the best possible experience on every device, based on available capabilities. This is a technology developed to make web applications more cross-platform and accessible on mobile devices. With PWA, you can create fast-loading websites that are highly interactive and compatible with various types of devices.
 This means that users on modern browsers and newer devices will get an enhanced experience that rivals the platform-specific (installed) apps on that platform – but users on older browsers or devices will continue to get a usable experience in the form of familiar websites.
 This allows Progressive Web Apps to combine the reach (broad availability and access) of website experiences with the capability (hardware features and rich resources) of platform-specific experiences.
 
 Progressive enhancement is a design philosophy that puts emphasis on content-first experiences where developers
-Ensure there is a baseline experience so users can consume core content from any device, even those with older browsers.
-Detect the existence of newer capabilities (e.g., on modern browsers, newer devices) and enhance the experience on those devices to use them.
+
+- Ensure there is a baseline experience so users can consume core content from any device, even those with older browsers.
+- Detect the existence of newer capabilities (e.g., on modern browsers, newer devices) and enhance the experience on those devices to use them.
+
 Progressive Web Apps takes advantage of open web technologies - like Service Workers, HTTPS, Web App Manifest, Push Notifications, and other Web APIs and capabilities - to detect and adapt experiences to suit the available capabilities on the platform.
-On older devices and browsers - where nothing new may be detected, it delivers a baseline website experience.
-On newer devices - it can detect device form factors and deliver responsive experiences that align with platform-specific behaviors.
-On modern browsers - it can detect support for Service Workers and Web App Manifest, and use those to unlock and support features like installability and offline operation - just like platform-specific apps.
+
+- On older devices and browsers - where nothing new may be detected, it delivers a baseline website experience.
+- On newer devices - it can detect device form factors and deliver responsive experiences that align with platform-specific behaviors.
+- On modern browsers - it can detect support for Service Workers and Web App Manifest, and use those to unlock and support features like installability and offline operation - just like platform-specific apps.
 
 ## II. Origin:
 
@@ -27,10 +32,10 @@ In 2015, Chrome developer Alex Russell and designer Frances Berriman introduced 
 
 ### How PWAs works:
 
-Customers access any website through the browser on their mobile devices. If the website supports PWA features, users will be prompted to install the site's PWA. This prompt will appear as a simple dialog box or an install button in the browser.
-If users agree, the browser will download and store the PWA on their device. The PWA will be saved on the phone's home screen, similar to a mobile app. However, PWAs are not entirely stored on the user's device; they are typically cached in the browser to provide a seamless online and offline experience.
-When users want to access the website, they can open the site's PWA instead of the browser, allowing for quicker and more convenient access and enabling continued use of the website even without a network connection.
-If the PWA is designed to work offline, users can still access the website. When the network connection is restored, the PWA will update with the latest data from the website and synchronize the data on the user's device.
+1. Customers access any website through the browser on their mobile devices. If the website supports PWA features, users will be prompted to install the site's PWA. This prompt will appear as a simple dialog box or an install button in the browser.
+2. If users agree, the browser will download and store the PWA on their device. The PWA will be saved on the phone's home screen, similar to a mobile app. However, PWAs are not entirely stored on the user's device; they are typically cached in the browser to provide a seamless online and offline experience.
+3. When users want to access the website, they can open the site's PWA instead of the browser, allowing for quicker and more convenient access and enabling continued use of the website even without a network connection.
+4. If the PWA is designed to work offline, users can still access the website. When the network connection is restored, the PWA will update with the latest data from the website and synchronize the data on the user's device.
 
 ### Installing PWA
 
@@ -40,24 +45,15 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 
 ### PWA’s characteristics
 
-Characteristic
-Why Is This Desirable?
-Discoverability
-I can find PWAs in app stores, or via web search.
-Installability
-I can add PWAs to my device home screen, and launch them - like any platform-specific app.
-Re-Engageability
-I can get push notification alerts (even if PWA is not actively in use) - like any platform-specific app .
-Network Independence
-I can get a usable PWA experience - like any platform-specific app.
-Progressive Enhancement
-My PWA experience scales up (like platform-specific apps) or down (like website) based on device capabilities.
-Secure
-My PWA uses secure network communications with privacy safeguards in place.
-Responsive
-My PWA adapts to suit device screen size, orientation and input modality.
-Linkability
-I can link to, share, bookmark, and visit the PWA URL - like any website.
+| Characteristic | Why Is This Desirable? |
+| Discoverability | I can find PWAs in app stores, or via web search.|
+| Installability | I can add PWAs to my device home screen, and launch them - like any platform-specific app. |
+| Re-Engageability | I can get push notification alerts (even if PWA is not actively in use) - like any platform-specific app. |
+| Network Independence | I can get a usable PWA experience - like any platform-specific app. |
+| Progressive Enhancement | My PWA experience scales up (like platform-specific apps) or down (like website) based on device capabilities. |
+| Secure | My PWA uses secure network communications with privacy safeguards in place. |
+| Responsive | My PWA adapts to suit device screen size, orientation and input modality. |
+| Linkability | I can link to, share, bookmark, and visit the PWA URL - like any website. |
 
 ## IV. Comparing Progressive Web Apps, Web Apps, and Native Apps:
 
