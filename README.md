@@ -45,15 +45,16 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 
 ### PWA’s characteristics
 
-| Characteristic | Why Is This Desirable? |
-| Discoverability | I can find PWAs in app stores, or via web search.|
-| Installability | I can add PWAs to my device home screen, and launch them - like any platform-specific app. |
-| Re-Engageability | I can get push notification alerts (even if PWA is not actively in use) - like any platform-specific app. |
-| Network Independence | I can get a usable PWA experience - like any platform-specific app. |
+| Characteristic          | Why Is This Desirable?                                                                                         |
+| ----------------------- | -------------------------------------------------------------------------------------------------------------- |
+| Discoverability         | I can find PWAs in app stores, or via web search.                                                              |
+| Installability          | I can add PWAs to my device home screen, and launch them - like any platform-specific app.                     |
+| Re-Engageability        | I can get push notification alerts (even if PWA is not actively in use) - like any platform-specific app.      |
+| Network Independence    | I can get a usable PWA experience - like any platform-specific app.                                            |
 | Progressive Enhancement | My PWA experience scales up (like platform-specific apps) or down (like website) based on device capabilities. |
-| Secure | My PWA uses secure network communications with privacy safeguards in place. |
-| Responsive | My PWA adapts to suit device screen size, orientation and input modality. |
-| Linkability | I can link to, share, bookmark, and visit the PWA URL - like any website. |
+| Secure                  | My PWA uses secure network communications with privacy safeguards in place.                                    |
+| Responsive              | My PWA adapts to suit device screen size, orientation and input modality.                                      |
+| Linkability             | I can link to, share, bookmark, and visit the PWA URL - like any website.                                      |
 
 ## IV. Comparing Progressive Web Apps, Web Apps, and Native Apps:
 
