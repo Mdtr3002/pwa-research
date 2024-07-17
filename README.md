@@ -2,12 +2,12 @@
 
 ### Table of Contents
 
-1. [Definition](#definition)
-2. [Origin](#origin)
-3. [Functionality and Key features](#functionality)
-4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#comparison)
-5. [When to make your application into a PWA](#application)
-6. [PWA’s building blocks](#blocks)
+1. [Definition](#i-definition)
+2. [Origin](#ii-origin)
+3. [Functionality and Key features](#iii-functionality)
+4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#iv-comparison)
+5. [When to make your application into a PWA](#v-application)
+6. [PWA’s building blocks](#vi-blocks)
 
 ## I. Definition:
 
@@ -39,7 +39,7 @@ Apple had been discussing a groundbreaking approach to creating web applications
 
 In 2015, Chrome developer Alex Russell and designer Frances Berriman introduced the term "Progressive Web Apps" in an article that called for a fundamental shift in our tools and understanding to "build better experiences across devices and contexts with a single codebase." This concept, an evolution of Apple's original idea enhanced with modern capabilities, received strong support from Google, which has aggressively promoted PWA development. Since then, major companies like Google and Microsoft have actively endorsed Progressive Web Apps as a solution to bridge the gap between web and native applications.
 
-## III. Functionality and Key features: {#functionality}
+## III. Functionality and Key features:
 
 ### How PWAs works:
 
@@ -69,7 +69,7 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 | Responsive              | My PWA adapts to suit device screen size, orientation and input modality.                                      |
 | Linkability             | I can link to, share, bookmark, and visit the PWA URL - like any website.                                      |
 
-## IV. Comparing Progressive Web Apps, Web Apps, and Native Apps: {#comparison}
+## IV. Comparing Progressive Web Apps, Web Apps, and Native Apps:
 
 ### PWA vs Web App
 
@@ -112,7 +112,7 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 - PWAs have access to a range of device features (such as push notifications, camera, and geolocation), but they might be limited compared to native apps due to browser security and permission restrictions.
 - Native apps have full access to all device features and sensors, allowing for more comprehensive use of hardware functionalities, including advanced features like Bluetooth, NFC, and background processing.
 
-## V. When to make your application into a PWA: {#application}
+## V. When to make your application into a PWA:
 
 ### Summary on the reasons why progressive web apps help retain users:
 
@@ -161,7 +161,7 @@ Due to its ability to function offline, the PWA could help users avoid frustrati
 
 Another perk is that it gives users a chance to try out the platform before downloading.
 
-## VI. PWA’s building blocks: {#blocks}
+## VI. PWA’s building blocks:
 
 The three core building blocks for PWA development:
 
