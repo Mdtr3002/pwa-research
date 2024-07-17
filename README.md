@@ -105,7 +105,7 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 
 ## V. When to make your application into a PWA:
 
-Summary on the reasons why progressive web apps help retain users:
+### Summary on the reasons why progressive web apps help retain users:
 
 - Easy onboarding: You can simply add the progressive web app to your home screen. No registration is required.
 - No need to download: Because there’s no need to download a PWA, users don’t have to worry about storage space on their devices. Many apps get uninstalled because of this.
@@ -126,11 +126,11 @@ Other times you should consider using a progressive web app are when:
 - Cross-platform compatibility is essential to your business.
 - You need to reach a wider audience.
 
-Case Studies on the Impact of PWAs on Businesses
+### Case Studies on the Impact of PWAs on Businesses
 
 <!-- Resources for case studies and metrics: PWAStats.com -->
 
-Starbucks:
+<ins>Starbucks:</ins>
 
 Starbucks used a PWA for its ordering system, which afforded the coffee giant additional functionality that a regular website doesn’t. When accessing the Starbucks PWA, consumers can place their orders, browse the menu, and much more without the hassle of downloading a new mobile app.
 
@@ -138,14 +138,15 @@ One of the big benefits is that this PWA is available offline, meaning customers
 
 PWAs offer a lot of speed. Starbucks customers can place their orders quickly, something that’s important if they’re in a hurry and trying to grab a quick item on the go.
 
-Uber:
+<ins>Uber:</ins>
 
 The primary benefit of the Uber PWA is that it works on slower networks and doesn’t take up much space. This allows more users to interact with the app, even those with limited network and storage resources.
 
 The Uber PWA is so versatile and accessible that it can be accessed via 3G or even 2G networks. Its PWA can accommodate the needs of consumers with low-end devices, as well as those who only use the service periodically and have no interest in installing the native mobile app permanently.
 
 The Uber progressive web app can be downloaded in seconds thanks to its compact file size. By expediting the download process, Uber can reduce bounce rates and prevent potential customers from turning to one of its competitors.
-Trivago:
+
+<ins>Trivago:</ins>
 
 Due to its ability to function offline, the PWA could help users avoid frustrating service disruptions when hopping on an elevator or driving through areas with poor service.
 
@@ -181,25 +182,26 @@ The Web App Manifest is an open web specification of a JSON format that is criti
 - Characteristics - e.g, icons, colors, screenshots.
 - Capabilities e.g., url_handlers
 
-A simplified explanation of how Web App Manifest is used:
+#### A simplified explanation of how Web App Manifest is used:
 
 - The browser is like an amazing workplace where people look out for your success. PWAs are apps “working” there - they keep an updated “resume” (manifest) and “link” it in their HTML to tell the browser they can work “remotely” (on device). The browser uses it to “advertise” this to users (“Install This Site As An App”).
 - If the user clicks that Install prompt, it triggers an “interview” between app new workplace (device), The latter looks up the resume for details (profile, appearance, skills) and adds it to its local “workplace directory” just like other platform-specific apps. Users can now launch the app, or discover it using device-specific search features. And, users and other apps can now target this app for tasks matching its listed capabilities (“url handling”).
 - The PWA can also list its resume in app stores just like platform-specific apps (publish to e.g., Microsoft Store for Windows devices). When users Install from the app store, they just trigger the same interview process.
 
-Creating a Web App Manifest:
+#### Creating a Web App Manifest:
+
 Creating a manifest involves:
 
 - Create a manifest.json and populate its properties.
 - Linking it to app HTML to advertise your PWA status.
+  `<link rel="manifest" href="/manifest.json">`
 
-<link rel="manifest" href="/manifest.json">
 A suggested minimal manifest should have at least these three - where start_url defines the entry point (default path shown) when app is launched on device.
-{
-"name": "My Sample PWA",
-"lang": "en-US",
-"start_url": "/"
-}
+`{
+    "name": "My Sample PWA",
+    "lang": "en-US",
+    "start_url": "/"
+}`
 
 Description of some supported members in the manifest:
 
@@ -224,14 +226,16 @@ Service Workers make PWAs re-engageable by having the ability to alert users to 
 
 Like all Web Workers, the Service Worker must be authored in its own file. The location of that file (relative to the root of the app) defines the scope of its authority. Service Workers can only intercept or manage requests to pages within their scope.
 
-Lifecycle events:
+#### Lifecycle events:
+
 Service worker registration is like onboarding the COO. Once that is complete, the service worker is ready to listen for lifecycle events (install, activate) to set itself up for success. Think of this as three phases:
 
 1. Registration: The browser registers the service worker, kicking off the Service Worker lifecycle.
 2. Installation: The browser triggers install as the first event to the Service Worker. It can use this for pre-caching resources (e.g., populate cache with long-lived resources like logos or offline pages).
-   self.addEventListener( "install", function( event ){
+
+`self.addEventListener( "install", function( event ){
    console.log( "WORKER: install event in progress." );
-   });
+});`
 
 3. Activation: The browser sends the activate event to indicate that the service worker has been installed. This service worker can now clean up actions (e.g., remove old caches from prior versions) and ready itself to handle functional events. If there is an old service worker in play, you can use clients.claim() to immediately replace the old service worker with your new one.
    self.addEventListener( "activate", function( event ){
