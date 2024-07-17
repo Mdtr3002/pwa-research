@@ -197,11 +197,14 @@ Creating a manifest involves:
   `<link rel="manifest" href="/manifest.json">`
 
 A suggested minimal manifest should have at least these three - where start_url defines the entry point (default path shown) when app is launched on device.
-`{
+
+```
+{
     "name": "My Sample PWA",
     "lang": "en-US",
     "start_url": "/"
-}`
+}
+```
 
 Description of some supported members in the manifest:
 
@@ -233,17 +236,21 @@ Service worker registration is like onboarding the COO. Once that is complete, t
 1. Registration: The browser registers the service worker, kicking off the Service Worker lifecycle.
 2. Installation: The browser triggers install as the first event to the Service Worker. It can use this for pre-caching resources (e.g., populate cache with long-lived resources like logos or offline pages).
 
-`self.addEventListener( "install", function( event ){
+```
+self.addEventListener( "install", function( event ){
    console.log( "WORKER: install event in progress." );
-});`
+});
+```
 
 3. Activation: The browser sends the activate event to indicate that the service worker has been installed. This service worker can now clean up actions (e.g., remove old caches from prior versions) and ready itself to handle functional events. If there is an old service worker in play, you can use clients.claim() to immediately replace the old service worker with your new one.
 
-`self.addEventListener( "activate", function( event ){
+```
+self.addEventListener( "activate", function( event ){
    console.log( "WORKER: activation event in progress." );
    clients.claim();
    console.log( "WORKER: all clients are now controlled" );
-`});
+});
+```
 
 #### Functional events:
 
@@ -251,15 +258,19 @@ Functional events are those that require the asynchronous or background processi
 
 - The fetch event is triggered when the browser tries to access a page that lies within the scope of the service worker. The service worker acts as an interceptor - returning a response either from the cache or from the network (or some combination of both) based on predefined strategies.
 
-`self.addEventListener( "fetch", function( event ){
+```
+self.addEventListener( "fetch", function( event ){
   console.log( "WORKER: Fetching", event.request );
-`});
+});
+```
 
 - The push event is triggered when the browser receives a push message from a server to display as a toast notification to users. This occurs only if the PWA had previously subscribed for server notifications and the user has granted the PWA permission to receive them. Push events are critical to re-engaging users when the app is not otherwise active.
 
-`self.addEventListener( "push", function( event ){
+```
+self.addEventListener( "push", function( event ){
   console.log( "WORKER: Received notification", event.data );
-`});
+});
+```
 
 #### Make you PWA able to work offline with service worker
 
@@ -272,7 +283,8 @@ Making resources available offline requires taking advantage of on-device storag
 
 ##### Cache on install to improve performance
 
-``// named cache in Cache Storage
+```
+// named cache in Cache Storage
 const CACHE_NAME = 'devtools-tips-v3';
 
 // list of requests whose responses will be pre-cached at install
@@ -300,13 +312,13 @@ const cache = await caches.open(CACHE_NAME);
 cache.addAll(INITIAL_CACHED_RESOURCES);
 })());
 });
-``
+```
 
 ##### Cache-first on (fetch) retrieval
 
 When a fetch event is received, the service worker can enforce its preferred policy - here a cache first strategy means that the service worker looks for a match in the cache and only goes to the network on a miss. Note that you can pre-filter on request parameters to refine the policy - e.g. go to cache only if resource type is an HTML page etc.
 
-``
+```
 // We have a cache-first strategy,
 // where we look for resources in the cache first
 // and only on the network if this fails.
@@ -327,35 +339,41 @@ const cache = await caches.open(CACHE_NAME);
     }
 
 }
-``
+```
 
 ##### Detecting Network changes
 
 What if you wanted to condition your strategy on the current status of the network? The navigator.onLine property returns a boolean (true/false) value reflecting the online status of the browser. Different browsers might implement this differently - so you may want to understand nuances to avoid false positives and negatives. The property should send update events if that status changes - and you can listen for those events at the window level.
 
-`window.addEventListener("online", function(){
-console.log("You are online!");
+```
+window.addEventListener("online", function(){
+    console.log("You are online!");
 });
 window.addEventListener("offline", function(){
-console.log("Oh no, you lost your network connection.");
-});`
+    console.log("Oh no, you lost your network connection.");
+});
+```
 
 ##### Service Workers and their clients can communicate using the postMessage API.
 
 - On the client side, this involves sending a message with relevant data:
 
-`` navigator.serviceWorker.controller.postMessage({
-type: `IS_OFFLINE`
-// add more properties if needed
-}); ``
+```
+navigator.serviceWorker.controller.postMessage({
+    type: `IS_OFFLINE`
+    // add more properties if needed
+});
+```
 
 - On the service worker side, it listens for “message” events and unpacks the data to take further action:
 
-`self.addEventListener('message', (event) => {
-if (event.data && event.data.type === 'IS_OFFLINE') {
-// take relevant actions
-}
-});`
+```
+self.addEventListener('message', (event) => {
+    if (event.data && event.data.type === 'IS_OFFLINE') {
+    // take relevant actions
+    }
+});
+```
 
 ### Capabilities:
 
