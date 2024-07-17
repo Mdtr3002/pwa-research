@@ -289,28 +289,28 @@ const CACHE_NAME = 'devtools-tips-v3';
 
 // list of requests whose responses will be pre-cached at install
 const INITIAL_CACHED_RESOURCES = [
-'/',
-'/offline/',
-'/all/',
-'/browser/edge/',
-'/browser/safari/',
-'/browser/firefox/',
-'/browser/chrome/',
-'/assets/style.css',
-'/assets/filter-tip-list.js',
-'/assets/share.js',
-'/assets/logo.png',
-'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
-'/assets/localforage-1.10.0.min.js'
+    '/',
+    '/offline/',
+    '/all/',
+    '/browser/edge/',
+    '/browser/safari/',
+    '/browser/firefox/',
+    '/browser/chrome/',
+    '/assets/style.css',
+    '/assets/filter-tip-list.js',
+    '/assets/share.js',
+    '/assets/logo.png',
+    'https://unpkg.com/prismjs@1.20.0/themes/prism-okaidia.css',
+    '/assets/localforage-1.10.0.min.js'
 ];
 
 // install event handler (note async operation)
 // opens named cache, pre-caches identified resources above
 self.addEventListener('install', event => {
-event.waitUntil((async () => {
-const cache = await caches.open(CACHE_NAME);
-cache.addAll(INITIAL_CACHED_RESOURCES);
-})());
+    event.waitUntil((async () => {
+        const cache = await caches.open(CACHE_NAME);
+        cache.addAll(INITIAL_CACHED_RESOURCES);
+    })());
 });
 ```
 
@@ -323,8 +323,8 @@ When a fetch event is received, the service worker can enforce its preferred pol
 // where we look for resources in the cache first
 // and only on the network if this fails.
 self.addEventListener('fetch', event => {
-event.respondWith((async () => {
-const cache = await caches.open(CACHE_NAME);
+    event.respondWith((async () => {
+        const cache = await caches.open(CACHE_NAME);
 
         // Try the cache first.
         const cachedResponse = await cache.match(event.request);
@@ -337,7 +337,6 @@ const cache = await caches.open(CACHE_NAME);
             // ...... truncated ....
         }
     }
-
 }
 ```
 
