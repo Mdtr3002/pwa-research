@@ -4,10 +4,10 @@
 
 1. [Definition](#i-definition)
 2. [Origin](#ii-origin)
-3. [Functionality and Key features](#iii-functionality)
-4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#iv-comparison)
-5. [When to make your application into a PWA](#v-application)
-6. [PWA’s building blocks](#vi-blocks)
+3. [Functionality and Key features](#iii-functionality-and-key-features)
+4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#iv-comparing-progressive-web-apps-web-apps-and-native-apps)
+5. [When to make your application into a PWA](#v-when-to-make-your-application-into-a-pwa)
+6. [PWA’s building blocks](#vi-pwas-building-blocks)
 
 ## I. Definition:
 
