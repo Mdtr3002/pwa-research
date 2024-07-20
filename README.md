@@ -22,6 +22,8 @@ This means that users on modern browsers and newer devices will get an enhanced 
 
 This allows Progressive Web Apps to combine the reach (broad availability and access) of website experiences with the capability (hardware features and rich resources) of platform-specific experiences.
 
+![PWA, Web app and Native app](/assets/introduction.png)
+
 Progressive enhancement is a design philosophy that puts emphasis on content-first experiences where developers
 
 - Ensure there is a baseline experience so users can consume core content from any device, even those with older browsers.
@@ -36,6 +38,8 @@ Progressive Web Apps takes advantage of open web technologies - like Service Wor
 ## II. Origin:
 
 Apple had been discussing a groundbreaking approach to creating web applications that "look and behave exactly like native apps" long before Google coined the term "Progressive Web Apps." In 2007, alongside the launch of the iPhone, Steve Jobs introduced the visionary idea of Web Apps, emphasizing app development around Safari's capabilities and downplaying the need for native apps. However, his enthusiasm waned, and four months later, an SDK for building more efficient native iOS apps was announced.
+
+![Chrome developer Alex Russell](/assets/origin.jpg)
 
 In 2015, Chrome developer Alex Russell and designer Frances Berriman introduced the term "Progressive Web Apps" in an article that called for a fundamental shift in our tools and understanding to "build better experiences across devices and contexts with a single codebase." This concept, an evolution of Apple's original idea enhanced with modern capabilities, received strong support from Google, which has aggressively promoted PWA development. Since then, major companies like Google and Microsoft have actively endorsed Progressive Web Apps as a solution to bridge the gap between web and native applications.
 
@@ -141,6 +145,8 @@ Other times you should consider using a progressive web app are when:
 
 <ins>Starbucks:</ins>
 
+![Starbucks PWA](/assets/starbucks-pwa.png)
+
 Starbucks used a PWA for its ordering system, which afforded the coffee giant additional functionality that a regular website doesn’t. When accessing the Starbucks PWA, consumers can place their orders, browse the menu, and much more without the hassle of downloading a new mobile app.
 
 One of the big benefits is that this PWA is available offline, meaning customers can browse the menu and add things to their carts even if they don’t have service. When service is restored, they can immediately come back and complete their orders.
@@ -148,6 +154,8 @@ One of the big benefits is that this PWA is available offline, meaning customers
 PWAs offer a lot of speed. Starbucks customers can place their orders quickly, something that’s important if they’re in a hurry and trying to grab a quick item on the go.
 
 <ins>Uber:</ins>
+
+![Uber PWA](/assets/uber-pwa.jpg)
 
 The primary benefit of the Uber PWA is that it works on slower networks and doesn’t take up much space. This allows more users to interact with the app, even those with limited network and storage resources.
 
@@ -157,11 +165,15 @@ The Uber progressive web app can be downloaded in seconds thanks to its compact 
 
 <ins>Trivago:</ins>
 
+![Trivago PWA](/assets/trivago-pwa.jpg)
+
 Due to its ability to function offline, the PWA could help users avoid frustrating service disruptions when hopping on an elevator or driving through areas with poor service.
 
 Another perk is that it gives users a chance to try out the platform before downloading.
 
 ## VI. PWA’s building blocks:
+
+![PWA Building Blocks](/assets/deconstruct-pwa.png)
 
 The three core building blocks for PWA development:
 
@@ -177,6 +189,8 @@ The Web App Manifest is the resume - it describes app identity, brand and capabi
 HTTPS is the Chief Security Officer (CSO) - it encrypts end-to-end communications between app and server endpoints for safety.
 The Service Worker is the Chief Operations Officer (COO) - it unblocks the CEO from performing time-consuming or synchronous tasks, and takes proactive actions to ensure reliable operation even when offline.
 
+![PWA as a Start-up](/assets/service-workers.png)
+
 ### HTTPS:
 
 HTTPS or HyperText Transfer Protocol Secure is a secure version of the HTTP protocol, encrypting end-to-end communications between client and server endpoints in your web app by default.
@@ -190,6 +204,8 @@ The Web App Manifest is an open web specification of a JSON format that is criti
 - Identity - e.g., name, categories, starting URL.
 - Characteristics - e.g, icons, colors, screenshots.
 - Capabilities e.g., url_handlers
+
+![Web App Manifest](/assets/manifest.png)
 
 #### A simplified explanation of how Web App Manifest is used:
 
@@ -282,6 +298,8 @@ self.addEventListener( "push", function( event ){
 ```
 
 #### Make you PWA able to work offline with service worker
+
+![PWA's Offline capability](/assets/dtt-caching.png)
 
 ##### Storage options
 
@@ -384,6 +402,8 @@ self.addEventListener('message', (event) => {
 ```
 
 ### Capabilities:
+
+![Capabilities](/assets/capabilities.png)
 
 Device platforms today evolve faster than the web platform can. Platform-specific apps can keep pace, delivering richer experiences driven by new device hardware or features. But web apps are limited in their ability to follow suit because they need those capabilities to be implemented for platform-specific software first so the browser can then proxy them into a web platform feature. This creates the experience gap between web and platform-specific app experiences that progressive web apps try to fill.
 
