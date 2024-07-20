@@ -23,6 +23,7 @@ This means that users on modern browsers and newer devices will get an enhanced 
 This allows Progressive Web Apps to combine the **reach** (broad availability and access) of website experiences with the **capability** (hardware features and rich resources) of platform-specific experiences.
 
 ![PWA, Web app and Native app](/assets/introduction.png)
+_PWA, Web app and Native app - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 **Progressive enhancement** is a design philosophy that puts emphasis on content-first experiences where developers
 
@@ -40,6 +41,7 @@ Progressive Web Apps takes advantage of **open web technologies** - like Service
 Apple had been discussing a groundbreaking approach to creating web applications that "look and behave exactly like native apps" long before Google coined the term "Progressive Web Apps." In 2007, alongside the launch of the iPhone, Steve Jobs introduced the visionary idea of **Web Apps**, emphasizing app development around Safari's capabilities and downplaying the need for native apps. However, his enthusiasm waned, and four months later, an SDK for building more efficient native iOS apps was announced.
 
 ![Chrome developer Alex Russell](/assets/origin.jpg)
+_Chrome developer Alex Russell_
 
 In 2015, Chrome developer **Alex Russell** and designer **Frances Berriman** introduced the term "Progressive Web Apps" in an article that called for a fundamental shift in our tools and understanding to "build better experiences across devices and contexts with a single codebase." This concept, an evolution of Apple's original idea enhanced with modern capabilities, received strong support from Google, which has aggressively promoted PWA development. Since then, major companies like Google and Microsoft have actively endorsed Progressive Web Apps as a solution to bridge the gap between web and native applications.
 
@@ -174,6 +176,7 @@ Another perk is that it gives users a chance to try out the platform before down
 ## VI. PWA’s building blocks:
 
 ![PWA Building Blocks](/assets/deconstruct-pwa.png)
+_PWA's Building Blocks - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 The three core building blocks for PWA development:
 
@@ -190,6 +193,7 @@ HTTPS is the Chief Security Officer (CSO) - it encrypts end-to-end communication
 The Service Worker is the Chief Operations Officer (COO) - it unblocks the CEO from performing time-consuming or synchronous tasks, and takes proactive actions to ensure reliable operation even when offline.
 
 ![PWA as a Start-up](/assets/service-workers.png)
+_PWA as a Startup - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 ### HTTPS:
 
@@ -206,6 +210,7 @@ The **Web App Manifest** is an open web specification of a JSON format that is c
 - Capabilities e.g., url_handlers
 
 ![Web App Manifest](/assets/manifest.png)
+_Web App Manifest - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 #### A simplified explanation of how Web App Manifest is used:
 
@@ -300,6 +305,7 @@ self.addEventListener( "push", function( event ){
 #### Make you PWA able to work offline with service worker
 
 ![PWA's Offline capability](/assets/dtt-caching.png)
+_PWA's Offline capability - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 ##### Storage options
 
@@ -404,6 +410,7 @@ self.addEventListener('message', (event) => {
 ### Capabilities:
 
 ![Capabilities](/assets/capabilities.png)
+_PWA's Capabilities - [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)_
 
 Device platforms today evolve faster than the web platform can. Platform-specific apps can keep pace, delivering richer experiences driven by new device hardware or features. But web apps are limited in their ability to follow suit because they need those capabilities to be implemented for platform-specific software first so the browser can then proxy them into a web platform feature. This creates the experience gap between web and platform-specific app experiences that progressive web apps try to fill.
 
