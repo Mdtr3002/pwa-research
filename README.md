@@ -13,23 +13,23 @@
 
 Today, users typically think of apps as either platform-installed apps or browser-based "web" apps, where the browser itself is an app installed on a specific platform:
 
-- Platform-specific apps function only on their respective device platforms, requiring a separate codebase for each platform and possibly a specialized development team familiar with the necessary tools and languages. This approach allows access to all platform-specific capabilities.
-- On the other hand, web apps operate universally with a single codebase, running across various browsers and devices that support those browsers. However, this universal compatibility limits their ability to utilize platform-specific features that may not be available everywhere.
+- **Platform-specific apps** function only on their respective device platforms, requiring a separate codebase for each platform and possibly a specialized development team familiar with the necessary tools and languages. This approach allows access to all platform-specific capabilities.
+- On the other hand, **web apps** operate universally with a single codebase, running across various browsers and devices that support those browsers. However, this universal compatibility limits their ability to utilize platform-specific features that may not be available everywhere.
 
-A Progressive Web App (PWA) is a traditional web app that is progressively enhanced using open web technologies, to make sure it delivers the best possible experience on every device, based on available capabilities. This is a technology developed to make web applications more cross-platform and accessible on mobile devices. With PWA, you can create fast-loading websites that are highly interactive and compatible with various types of devices.
+A **Progressive Web App (PWA)** is a traditional web app that is **progressively enhanced** using open web technologies, to make sure it delivers the **best possible experience** on every device, based on available capabilities. This is a technology developed to make web applications more cross-platform and accessible on mobile devices. With PWA, you can create fast-loading websites that are highly interactive and compatible with various types of devices.
 
 This means that users on modern browsers and newer devices will get an enhanced experience that rivals the platform-specific (installed) apps on that platform – but users on older browsers or devices will continue to get a usable experience in the form of familiar websites.
 
-This allows Progressive Web Apps to combine the reach (broad availability and access) of website experiences with the capability (hardware features and rich resources) of platform-specific experiences.
+This allows Progressive Web Apps to combine the **reach** (broad availability and access) of website experiences with the **capability** (hardware features and rich resources) of platform-specific experiences.
 
 ![PWA, Web app and Native app](/assets/introduction.png)
 
-Progressive enhancement is a design philosophy that puts emphasis on content-first experiences where developers
+**Progressive enhancement** is a design philosophy that puts emphasis on content-first experiences where developers
 
 - Ensure there is a baseline experience so users can consume core content from any device, even those with older browsers.
 - Detect the existence of newer capabilities (e.g., on modern browsers, newer devices) and enhance the experience on those devices to use them.
 
-Progressive Web Apps takes advantage of open web technologies - like Service Workers, HTTPS, Web App Manifest, Push Notifications, and other Web APIs and capabilities - to detect and adapt experiences to suit the available capabilities on the platform.
+Progressive Web Apps takes advantage of **open web technologies** - like Service Workers, HTTPS, Web App Manifest, Push Notifications, and other Web APIs and capabilities - to detect and adapt experiences to suit the available capabilities on the platform.
 
 - On older devices and browsers - where nothing new may be detected, it delivers a baseline website experience.
 - On newer devices - it can detect device form factors and deliver responsive experiences that align with platform-specific behaviors.
@@ -37,11 +37,11 @@ Progressive Web Apps takes advantage of open web technologies - like Service Wor
 
 ## II. Origin:
 
-Apple had been discussing a groundbreaking approach to creating web applications that "look and behave exactly like native apps" long before Google coined the term "Progressive Web Apps." In 2007, alongside the launch of the iPhone, Steve Jobs introduced the visionary idea of Web Apps, emphasizing app development around Safari's capabilities and downplaying the need for native apps. However, his enthusiasm waned, and four months later, an SDK for building more efficient native iOS apps was announced.
+Apple had been discussing a groundbreaking approach to creating web applications that "look and behave exactly like native apps" long before Google coined the term "Progressive Web Apps." In 2007, alongside the launch of the iPhone, Steve Jobs introduced the visionary idea of **Web Apps**, emphasizing app development around Safari's capabilities and downplaying the need for native apps. However, his enthusiasm waned, and four months later, an SDK for building more efficient native iOS apps was announced.
 
 ![Chrome developer Alex Russell](/assets/origin.jpg)
 
-In 2015, Chrome developer Alex Russell and designer Frances Berriman introduced the term "Progressive Web Apps" in an article that called for a fundamental shift in our tools and understanding to "build better experiences across devices and contexts with a single codebase." This concept, an evolution of Apple's original idea enhanced with modern capabilities, received strong support from Google, which has aggressively promoted PWA development. Since then, major companies like Google and Microsoft have actively endorsed Progressive Web Apps as a solution to bridge the gap between web and native applications.
+In 2015, Chrome developer **Alex Russell** and designer **Frances Berriman** introduced the term "Progressive Web Apps" in an article that called for a fundamental shift in our tools and understanding to "build better experiences across devices and contexts with a single codebase." This concept, an evolution of Apple's original idea enhanced with modern capabilities, received strong support from Google, which has aggressively promoted PWA development. Since then, major companies like Google and Microsoft have actively endorsed Progressive Web Apps as a solution to bridge the gap between web and native applications.
 
 ## III. Functionality and Key features:
 
@@ -91,43 +91,43 @@ When you tap the web app's icon, it opens up in the browser environment that ins
 
 #### Development process:
 
-- Building a progressive web app is cheaper than developing a native app. In the case of the native app, you will have to learn the language and build a version for each platform. This means you need at least two versions for iOS and Android, and the resources to maintain and update each version. Depending on the purpose and complexity of the app, this requires a lot of time and money.
-- A progressive web app is faster to build and update with one single codebase for various platforms. With responsive design, you just need one version of the app, and it will display in an identical manner on all devices.
-- PWA bypasses the cumbersome App Store requirements since all the users need is a web browser and a URL. Many PWA features are supported by popular browsers such as Chrome, Safari, Firefox, and Edge. This makes it easier for your app to reach a large audience in a short time.
-- However, the Store requirements prevent poor-quality apps from being published. Publishing an app can increase your reliability and give users more confidence to access your app. Stores can also promote your business: being featured in an App Store can give you a quick branding and sales boost.
+- Building a progressive web app is **cheaper** than developing a native app. In the case of the native app, you will have to learn the language and build a version for each platform. This means you need at least two versions for iOS and Android, and the resources to maintain and update each version. Depending on the purpose and complexity of the app, this requires a lot of time and money.
+- A progressive web app is **faster to build and update** with one single codebase for various platforms. With responsive design, you just need one version of the app, and it will display in an identical manner on all devices.
+- PWA **bypasses** the cumbersome App Store requirements since all the users need is a web browser and a URL. Many PWA features are supported by popular browsers such as Chrome, Safari, Firefox, and Edge. This makes it easier for your app to reach a large audience in a short time.
+- However, the Store requirements prevent poor-quality apps from being published. Publishing an app can increase your reliability and give users more confidence to access your app. Stores can also promote your business: being featured in an App Store can give you a quick **branding and sales boost**.
 
 #### Security:
 
-- PWAs have to run under HTTPS. These security protocols ensure that no exchanges between the client and the server are tampered with. In a secure environment, customers can enter personal details and credit card information without the worry they might be stolen.
-- Compared to PWA, with a native app, you have the option to build in many security measures. In addition, users are more likely to trust an app than a URL, as it needs to pass the App Store’s security requirements before getting published.
+- PWAs have to run under **HTTPS**. These security protocols ensure that no exchanges between the client and the server are tampered with. In a secure environment, customers can enter personal details and credit card information without the worry they might be stolen.
+- Compared to PWA, with a native app, you have the option to build in many **security measures**. In addition, users are more likely to trust an app than a URL, as it needs to pass the App Store’s security requirements before getting published.
 
 #### Installation:
 
-- A PWA requires no App Store or installation. From the browser, visitors can bookmark and add the app to their home screen with a few taps. The PWA will show up on the home screen, in their app directory, send notifications, and integrate into system settings.
+- A PWA requires **no App Store or installation**. From the browser, visitors can bookmark and add the app to their home screen with a few taps. The PWA will show up on the home screen, in their app directory, send notifications, and integrate into system settings.
 - A PWA doesn’t take up as much space as an app. With just an URL, visitors can access and share the app with their friends. There’s also no need to update the app, as it always displays the most recent version upon launching.
 
 #### Performance:
 
-- PWA loads faster. At the heart of any PWA is service workers, scripts that run in the background and separate from the web page. With service workers, you can manage offline requests, prefetch, and cache certain resources, sync data with a remote server, and more.
-- PWA runs from a browser, which means that there will be latency and more battery consumption than the native app. A native app can tie into the underlying operating system. It can access device hardware to do more calculations and deliver a better experience to your customers.
+- PWA **loads faster**. At the heart of any PWA is service workers, scripts that run in the background and separate from the web page. With service workers, you can manage offline requests, prefetch, and cache certain resources, sync data with a remote server, and more.
+- PWA runs from a browser, which means that there will be **latency** and more **battery consumption** than the native app. A native app can tie into the underlying operating system. It can access device hardware to do more calculations and deliver a better experience to your customers.
 
 #### Functionality:
 
-- PWAs have access to a range of device features (such as push notifications, camera, and geolocation), but they might be limited compared to native apps due to browser security and permission restrictions.
-- Native apps have full access to all device features and sensors, allowing for more comprehensive use of hardware functionalities, including advanced features like Bluetooth, NFC, and background processing.
+- PWAs have access to a range of device features (such as push notifications, camera, and geolocation), but they might be **limited** compared to native apps due to browser security and permission restrictions.
+- Native apps have **full access** to all device features and sensors, allowing for more comprehensive use of hardware functionalities, including advanced features like Bluetooth, NFC, and background processing.
 
 ## V. When to make your application into a PWA:
 
 ### Summary on the reasons why progressive web apps help retain users:
 
-- Easy onboarding: You can simply add the progressive web app to your home screen. No registration is required.
-- No need to download: Because there’s no need to download a PWA, users don’t have to worry about storage space on their devices. Many apps get uninstalled because of this.
-- Push notifications: Like those from native apps, these keep users informed of any updates in your business.
-- Time & Money: PWAs are easy and cheaper to develop than typical apps. If you’re starting from scratch, you’re probably better off starting with a progressive web app as it will get to market faster.
-- Offline capability: enabling users to access and use the app even without an internet connection.
-- Broad reach: can be distributed through app stores and web browsers
+- **Easy onboarding:** You can simply add the progressive web app to your home screen. No registration is required.
+- **No need to download:** Because there’s no need to download a PWA, users don’t have to worry about storage space on their devices. Many apps get uninstalled because of this.
+- **Push notifications:** Like those from native apps, these keep users informed of any updates in your business.
+- **Time & Money:** PWAs are easy and cheaper to develop than typical apps. If you’re starting from scratch, you’re probably better off starting with a progressive web app as it will get to market faster.
+- **Offline capability:** enabling users to access and use the app even without an internet connection.
+- **Broad reach:** can be distributed through app stores and web browsers
 
-One reason brands develop native apps is to cater to users who return to their websites to perform specific actions frequently. Apps make it easier for these functions to be performed without going to the brand’s website. They also have characteristics that make them fun to use.
+One reason brands develop native apps is to cater to users who return to their websites to **perform specific actions frequently**. Apps make it easier for these functions to be performed without going to the brand’s website. They also have characteristics that make them fun to use.
 
 You can use progressive apps in the same situations native apps are used—for applications you expect your visitors to visit frequently.
 
@@ -141,7 +141,7 @@ Other times you should consider using a progressive web app are when:
 
 ### Case Studies on the Impact of PWAs on Businesses
 
-<!-- Resources for case studies and metrics: PWAStats.com -->
+Resources for case studies and metrics: [PWAStats.com](https://aka.ms/learn-PWA/30Days-1.1/pwastats.com)
 
 <ins>Starbucks:</ins>
 
@@ -177,9 +177,9 @@ Another perk is that it gives users a chance to try out the platform before down
 
 The three core building blocks for PWA development:
 
-- HTTPS - makes your PWA secure.
-- Service Workers - makes your PWA reliable and network-independent.
-- Web App Manifest - makes your PWA installable.
+- **HTTPS** - makes your PWA secure.
+- **Service Workers** - makes your PWA reliable and network-independent.
+- **Web App Manifest** - makes your PWA installable.
 
 Think about the PWA like a startup - with each technology being a founding team member with a specialized purpose that helps deliver a progressively-enhanced experience.
 
@@ -199,7 +199,7 @@ Progressive Web Apps must be served from an HTTPS endpoint to ensure secure comm
 
 ### Web App Manifest:
 
-The Web App Manifest is an open web specification of a JSON format that is critical to making PWAs installable. Functionally, it governs how your PWA looks and behaves when installed on device by defining the properties (key-value pairs) that characterize its appearance and behaviors. In other words, it describes details about your web app, such as your app name, description, icons, and more.
+The **Web App Manifest** is an open web specification of a JSON format that is critical to making PWAs installable. Functionally, it governs how your PWA looks and behaves when installed on device by defining the properties (key-value pairs) that characterize its appearance and behaviors. In other words, it describes details about your web app, such as your app name, description, icons, and more.
 
 - Identity - e.g., name, categories, starting URL.
 - Characteristics - e.g, icons, colors, screenshots.
@@ -210,7 +210,7 @@ The Web App Manifest is an open web specification of a JSON format that is criti
 #### A simplified explanation of how Web App Manifest is used:
 
 - The browser is like an amazing workplace where people look out for your success. PWAs are apps “working” there - they keep an updated “resume” (manifest) and “link” it in their HTML to tell the browser they can work “remotely” (on device). The browser uses it to “advertise” this to users (“Install This Site As An App”).
-- If the user clicks that Install prompt, it triggers an “interview” between app new workplace (device), The latter looks up the resume for details (profile, appearance, skills) and adds it to its local “workplace directory” just like other platform-specific apps. Users can now launch the app, or discover it using device-specific search features. And, users and other apps can now target this app for tasks matching its listed capabilities (“url handling”).
+- If the user clicks that **Install** prompt, it triggers an “interview” between app new workplace (device), The latter looks up the resume for details (profile, appearance, skills) and adds it to its local “workplace directory” just like other platform-specific apps. Users can now launch the app, or discover it using device-specific search features. And, users and other apps can now target this app for tasks matching its listed capabilities (“url handling”).
 - The PWA can also list its resume in app stores just like platform-specific apps (publish to e.g., Microsoft Store for Windows devices). When users Install from the app store, they just trigger the same interview process.
 
 #### Creating a Web App Manifest:
@@ -221,7 +221,7 @@ Creating a manifest involves:
 - Linking it to app HTML to advertise your PWA status.
   `<link rel="manifest" href="/manifest.json">`
 
-A suggested minimal manifest should have at least these three - where start_url defines the entry point (default path shown) when app is launched on device.
+A suggested minimal manifest should have at least these three - where **start_url** defines the entry point (default path shown) when app is launched on device.
 
 ```
 {
@@ -246,7 +246,7 @@ Description of some supported members in the manifest:
 
 ### Service worker:
 
-Service Workers are a special type of Web Worker. Web Workers operate in a separate thread, allowing them to execute long-running or asynchronous tasks in the background, minimizing the impact on page performance.
+Service Workers are a special type of **Web Worker**. Web Workers operate in a separate thread, allowing them to execute long-running or asynchronous tasks in the background, minimizing the impact on page performance.
 
 Service Workers make PWA operation reliable by helping deliver usable experiences even under flaky or offline network conditions. They do this by intercepting network fetch requests from the page and strategically handling them using cached responses (if offline), or network-fetched resources (if real-time), or some combination of both based on predefined caching strategies for resource types.
 
@@ -258,8 +258,8 @@ Like all Web Workers, the Service Worker must be authored in its own file. The l
 
 Service worker registration is like onboarding the COO. Once that is complete, the service worker is ready to listen for lifecycle events (install, activate) to set itself up for success. Think of this as three phases:
 
-1. Registration: The browser registers the service worker, kicking off the Service Worker lifecycle.
-2. Installation: The browser triggers install as the first event to the Service Worker. It can use this for pre-caching resources (e.g., populate cache with long-lived resources like logos or offline pages).
+1. **Registration:** The browser registers the service worker, kicking off the Service Worker lifecycle.
+2. **Installation:** The browser triggers install as the first event to the Service Worker. It can use this for pre-caching resources (e.g., populate cache with long-lived resources like logos or offline pages).
 
 ```
 self.addEventListener( "install", function( event ){
@@ -267,7 +267,7 @@ self.addEventListener( "install", function( event ){
 });
 ```
 
-3. Activation: The browser sends the activate event to indicate that the service worker has been installed. This service worker can now clean up actions (e.g., remove old caches from prior versions) and ready itself to handle functional events. If there is an old service worker in play, you can use clients.claim() to immediately replace the old service worker with your new one.
+3. **Activation:** The browser sends the activate event to indicate that the service worker has been installed. This service worker can now clean up actions (e.g., remove old caches from prior versions) and ready itself to handle functional events. If there is an old service worker in play, you can use clients.claim() to immediately replace the old service worker with your new one.
 
 ```
 self.addEventListener( "activate", function( event ){
@@ -281,7 +281,7 @@ self.addEventListener( "activate", function( event ){
 
 Functional events are those that require the asynchronous or background processing abilities of service workers to support reliable and re-enageable behaviors. For now, think about just two: “fetch” and “push”.
 
-- The fetch event is triggered when the browser tries to access a page that lies within the scope of the service worker. The service worker acts as an interceptor - returning a response either from the cache or from the network (or some combination of both) based on predefined strategies.
+- The **fetch event** is triggered when the browser tries to access a page that lies within the scope of the service worker. The service worker acts as an interceptor - returning a response either from the cache or from the network (or some combination of both) based on predefined strategies.
 
 ```
 self.addEventListener( "fetch", function( event ){
@@ -289,7 +289,7 @@ self.addEventListener( "fetch", function( event ){
 });
 ```
 
-- The push event is triggered when the browser receives a push message from a server to display as a toast notification to users. This occurs only if the PWA had previously subscribed for server notifications and the user has granted the PWA permission to receive them. Push events are critical to re-engaging users when the app is not otherwise active.
+- The **push event** is triggered when the browser receives a push message from a server to display as a toast notification to users. This occurs only if the PWA had previously subscribed for server notifications and the user has granted the PWA permission to receive them. Push events are critical to re-engaging users when the app is not otherwise active.
 
 ```
 self.addEventListener( "push", function( event ){
@@ -305,8 +305,8 @@ self.addEventListener( "push", function( event ){
 
 Making resources available offline requires taking advantage of on-device storage. Given their async nature, service workers (web workers) have access to two options:
 
-- CacheStorage - an API to a store of named Cache objects that can be accessed by both service workers and an app’s main JavaScript thread. Caches store request/response pairs for network resources. Caches need to be managed explicitly - for updates and deletes - with quotas set per origin. A service worker can have multiple named Cache objects if needed.
-- IndexedDB - an API to store large amounts of structured data including files and blobs. It’s an object-oriented transactional database that uses key-value pairs and is ideal for storing individual assets (vs. response pages in cache). You can read more about IndexedDB in week 4 Platforms & Practices.
+- **CacheStorage** - an API to a store of named Cache objects that can be accessed by both service workers and an app’s main JavaScript thread. Caches store request/response pairs for network resources. Caches need to be managed explicitly - for updates and deletes - with quotas set per origin. A service worker can have multiple named Cache objects if needed.
+- **IndexedDB** - an API to store large amounts of structured data including files and blobs. It’s an object-oriented transactional database that uses key-value pairs and is ideal for storing individual assets (vs. response pages in cache). You can read more about IndexedDB in week 4 Platforms & Practices.
 
 ##### Cache on install to improve performance
 
@@ -369,7 +369,7 @@ self.addEventListener('fetch', event => {
 
 ##### Detecting Network changes
 
-What if you wanted to condition your strategy on the current status of the network? The navigator.onLine property returns a boolean (true/false) value reflecting the online status of the browser. Different browsers might implement this differently - so you may want to understand nuances to avoid false positives and negatives. The property should send update events if that status changes - and you can listen for those events at the window level.
+What if you wanted to condition your strategy on the current status of the network? The **navigator.onLine** property returns a boolean (true/false) value reflecting the online status of the browser. Different browsers might implement this differently - so you may want to understand nuances to avoid false positives and negatives. The property should send update events if that status changes - and you can listen for those events at the window level.
 
 ```
 window.addEventListener("online", function(){
@@ -415,9 +415,9 @@ Project Fugu is a collaborative initiative with one driving vision: “web apps 
 
 How does Fugu work? It’s a multi-stage process where proposals for new capability APIs are made in the open and evolved iteratively with feedback from all key stakeholders. The steps of the standardization process are as follows:
 
-1. New capability is suggested - by filing a feature request
-2. Capability goes under consideration - explainers written, feedback solicited.
-3. Work has started - on a formal API spec to iterate on,
-4. Available in developer trials - under experimental flag, not for production
-5. Available in origin trials - for validation, in prototypes for larger audiences
-6. Capability has shipped - API is stable in latest browser version.
+1. New capability is suggested - by filing a **feature request**
+2. Capability goes under **consideration** - explainers written, feedback solicited.
+3. **Work** has started - on a formal API spec to iterate on,
+4. Available in **developer trials** - under experimental flag, not for production
+5. Available in **origin trials** - for validation, in prototypes for larger audiences
+6. Capability has **shipped** - API is stable in latest browser version.
