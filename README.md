@@ -8,6 +8,7 @@
 4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#iv-comparing-progressive-web-apps-web-apps-and-native-apps)
 5. [When to make your application into a PWA](#v-when-to-make-your-application-into-a-pwa)
 6. [PWA’s building blocks](#vi-pwas-building-blocks)
+7. [References](#vii-references)
 
 ## I. Definition:
 
@@ -427,3 +428,21 @@ How does Fugu work? It’s a multi-stage process where proposals for new capabil
 4. Available in **developer trials** - under experimental flag, not for production
 5. Available in **origin trials** - for validation, in prototypes for larger audiences
 6. Capability has **shipped** - API is stable in latest browser version.
+
+## VII. References:
+
+### PWA Courses:
+
+- [30DaysOfPWA](https://microsoft.github.io/win-student-devs/#/30DaysOfPWA/README)
+- [Learn PWA - web.dev](https://web.dev/learn/pwa)
+
+### Reference content:
+
+- [Progressive Web Apps with Alex Russell](https://www.youtube.com/watch?app=desktop&v=x7cfLDFVyHo)
+- [What is PWA?](https://www.linkedin.com/pulse/progressive-web-app-pwa-l%C3%A0-g%C3%AC-c%C3%A1ch-s%E1%BB%AD-d%E1%BB%A5ng-trong-jamstack/)
+- [React PWA with Workbox](https://dev.to/noconsulate/react-pwa-with-workbox-6dl)
+- [Converting Existing React App to PWA](https://medium.com/swlh/converting-existing-react-app-to-pwa-3c7e4e773db3)
+- [PWA Stats](https://www.pwastats.com/)
+- [Progressive Web App demos](https://learn.microsoft.com/en-us/microsoft-edge/progressive-web-apps-chromium/demo-pwas)
+- [What can PWA do](https://whatpwacando.today/)
+- [PWA Offline operations](https://developer.mozilla.org/en-US/docs/Web/Progressive_web_apps/Guides/Offline_and_background_operation#periodic_background_sync)
