@@ -155,7 +155,7 @@ PWAs offer a lot of speed. Starbucks customers can place their orders quickly, s
 
 <ins>Uber:</ins>
 
-![Uber PWA](/assets/uber-pwa.jpg)
+![Uber PWA](/assets/uber_pwa.jpg)
 
 The primary benefit of the Uber PWA is that it works on slower networks and doesn’t take up much space. This allows more users to interact with the app, even those with limited network and storage resources.
 
