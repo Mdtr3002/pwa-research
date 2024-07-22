@@ -8,7 +8,8 @@
 4. [Comparing Progressive Web Apps, Web Apps, and Native Apps](#iv-comparing-progressive-web-apps-web-apps-and-native-apps)
 5. [When to make your application into a PWA](#v-when-to-make-your-application-into-a-pwa)
 6. [PWA’s building blocks](#vi-pwas-building-blocks)
-7. [References](#vii-references)
+7. [Demonstration Project](#vii-demonstration-project)
+8. [References](#viii-references)
 
 ## I. Definition:
 
@@ -429,7 +430,45 @@ How does Fugu work? It’s a multi-stage process where proposals for new capabil
 5. Available in **origin trials** - for validation, in prototypes for larger audiences
 6. Capability has **shipped** - API is stable in latest browser version.
 
-## VII. References:
+## VII. Demonstration Project
+
+A simple demonstration project is prepared beforehand in this repository. The demo is a todos list management site with two basics function, view to-do list and create a new to-do. The project is created using create-react-app with the PWA template
+`npx create-react-app randos --template cra-template-pwa`
+
+The template introduced by create-react-app will use the workbox library to define operating logic for the service workers.
+
+Maintaining your service worker and cache storage logic can be a challenge as your PWA grows. Workbox, is a set of open-source libraries to help with that. Workbox encapsulates the low-level APIs, like the Service Worker API and Cache Storage API, and exposes more developer-friendly interfaces. The workbox-webpack-plugin is integrated into production configuration, and it will take care of compiling a service worker file that will automatically precache all of your webpack-generated assets and keep them up to date as you deploy updates.
+
+**Deployed version:** [https://todos-list-75591.web.app/](https://todos-list-75591.web.app/)
+
+### Available scripts:
+
+`npm install`
+Install all the dependencies required for the project
+
+`npm start`
+
+Runs the app in the development mode.\
+Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+
+The page will reload when you make changes.\
+You may also see any lint errors in the console.
+
+_Important:_ The service worker will not be able to operate correctly if you run the app in the development mode, leading to incorrect behaviors. Because with the predefined logic in serviceWorkerRegistration.js, you will notice that the service worker isn't registered unless we're in production.
+
+`npm run build`
+
+Build the app for production to the `build` folder.
+
+`npx serve -s build`
+
+Start a local server to serve the files from the build directory, with support for client-side routing
+
+`npm run buildnserve`
+
+Build the app then start a local server to serve the newly created build directory
+
+## VIII. References:
 
 ### PWA Courses:
 
